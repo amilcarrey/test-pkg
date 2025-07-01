@@ -1,12 +1,1 @@
 @import "tailwindcss";
-
-.aw-widget-root {
-  @layer utilities {
-    /* All Tailwind utilities will be scoped to this class */
-  }
-}
-
-.aw-widget-root * {
-  /* Ensure widget styles don't leak out */
-  box-sizing: border-box;
-}
