@@ -1,6 +1,6 @@
 {
-  "name": "@amilcarrey/widget",
-  "version": "1.0.0",
+  "name": "amilcarrey-widget",
+  "version": "1.0.4",
   "description": "A React widget component with shadcn/ui Card and Tailwind CSS",
   "author": "amilcarrey",
   "license": "MIT",
@@ -8,7 +8,14 @@
     "type": "git",
     "url": "https://github.com/amilcarrey/trt-widget.git"
   },
-  "keywords": ["react", "widget", "shadcn", "tailwind", "card", "component"],
+  "keywords": [
+    "react",
+    "widget",
+    "shadcn",
+    "tailwind",
+    "card",
+    "component"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -24,7 +31,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format cjs,esm --dts --external react --minify --clean && tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "build": "tsup src/index.tsx --format cjs,esm --dts --external react --minify --clean && bunx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css --minify",
+    "build:css": "bunx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css --minify",
     "dev": "tsup src/index.tsx --format cjs,esm --dts --external react --watch",
     "lint": "eslint src/"
   },
@@ -33,11 +41,9 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.0",
-    "tailwindcss": "^3.4.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },

@@ -1,4 +1,4 @@
-# @amilcarrey/widget
+# amilcarrey-widget
 
 A React widget component with shadcn/ui Card and Tailwind CSS styling.
 
@@ -13,18 +13,18 @@ A React widget component with shadcn/ui Card and Tailwind CSS styling.
 ## Installation
 
 ```bash
-npm install @amilcarrey/widget
+npm install amilcarrey-widget
 # or
-yarn add @amilcarrey/widget
+yarn add amilcarrey-widget
 # or  
-bun add @amilcarrey/widget
+bun add amilcarrey-widget
 ```
 
 ## Usage
 
 ```tsx
-import { Widget } from '@amilcarrey/widget'
-import '@amilcarrey/widget/styles.css'
+import { Widget } from 'amilcarrey-widget'
+import 'amilcarrey-widget/styles.css'
 
 function App() {
   return (
